@@ -1,2 +1,2 @@
 # IOS-CALCULATOR
-### This repository cerated for ios calculator project.
+### The repo for the iPhone calculator code-along using HTML, CSS, and JavaScript
