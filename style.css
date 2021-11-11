@@ -15,6 +15,7 @@ body{
     margin: 2rem auto;
     padding: 20px;
     color: white;
+    position: relative;
 }
 
 .clock{
@@ -29,12 +30,12 @@ body{
 img{
     padding:0 1rem;
 }
-.display{
-    font-size:6rem;
-    margin-bottom: 1.2rem;
+.value{
+    font-size:7rem;
+    font-weight: 300;
     height:158px;
     text-align: right;
-    margin-right: 1.5rem;
+    margin-right: 1.3rem;
 }
 .buttons-container{
 display: grid;
@@ -51,6 +52,13 @@ grid-gap: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition:filter .3s;
+}
+
+.button:active,
+.button:focus{
+    filter: brightness(120%);
 }
 .button.function{
 color: black;
@@ -58,4 +66,22 @@ background: #a5a5a5;
 }
 .button.operator{
     background:#f1a33c ;
+}
+.button.number-0{
+    width: 15rem;
+    border-radius:55px ;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    grid-column: 1/span 2; 
+}
+.bottom{
+    width: 200px;
+    height: 4px;
+    background: white;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 50%;
+    /* to center it,go to the middle center */
+    transform: translateX(-50%);
 }
