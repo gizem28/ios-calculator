@@ -13,9 +13,9 @@ body{
     height: 95vh;
     border-radius: 50px;
     margin: 2rem auto;
-    padding: 20px;
+    padding: 1rem;
     color: white;
-    position: relative;
+    /* position: relative; */
 }
 
 .clock{
@@ -41,7 +41,7 @@ img{
 display: grid;
 grid-template-columns:repeat(4, 1fr);
 grid-template-rows:repeat(5, 1fr);
-grid-gap: 0.7rem;
+grid-gap: 1rem;
 }
 .button{
     height:10vh;
@@ -68,20 +68,9 @@ background: #a5a5a5;
     background:#f1a33c ;
 }
 .button.number-0{
-    width: 15rem;
+    width: 12.5rem;
     border-radius:55px ;
     justify-content: flex-start;
     padding-left: 2rem;
     grid-column: 1/span 2; 
-}
-.bottom{
-    width: 200px;
-    height: 4px;
-    background: white;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 0.8rem;
-    left: 50%;
-    /* to center it,go to the middle center */
-    transform: translateX(-50%);
 }
