@@ -36,11 +36,13 @@ let operatorInMemory = null;
 
 
 // Functions
-const getValueAsStr = () => valueEl.textContent.split(',').join('');
+const getValueAsStr = () => 
+  valueEl.textContent.split('.').join('');//
 
-const getValueAsNum = () => {
-  return parseFloat(getValueAsStr());
-};
+
+// const getValueAsNum = () => {
+//   return parseFloat(getValueAsStr());
+// };
 
 const setStrAsValue = (valueStr) => {
   if (valueStr[valueStr.length - 1] === '.') {
@@ -96,8 +98,6 @@ const handleOperatorClick = (operation) => {
   operatorInMemory = operation;
   setStrAsValue('0');
 };
-
-
 
 
 // Add Event Listeners to functions
