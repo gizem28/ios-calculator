@@ -89,11 +89,3 @@ background: #a5a5a5;
         padding-left: 1rem;
     }
 }
-
-/* @media only screen and (max-width: 300px) {
-    .calculator{
-        width: 75vw;
-        /* height: 90vh; */
-        block-size: 100px;
-    }
-} */
