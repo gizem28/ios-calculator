@@ -6,6 +6,7 @@
 }
 body{
     font-family: sans-serif;
+    /* min-height: 1280px; // change width as needed to fit your page */
 }
 .calculator{
     background-color: black;
@@ -16,6 +17,8 @@ body{
     padding: 1rem;
     color: white;
     /* position: relative; */
+    /* min-height: 50vh; */
+    min-height: 70vh;
 }
 
 .clock{
@@ -25,7 +28,7 @@ body{
     padding-left: 0 1rem;
     display: flex;
     justify-content: space-between;
-    height: 15vh; //250px
+    height: 15vh; // 250px
 }
 img{
     padding:0 1rem;
@@ -35,13 +38,13 @@ img{
     font-weight: 300;
     height:158px;
     text-align: right;
-    margin-right: 1.3rem;
+    margin-right:0.5rem;
 }
 .buttons-container{
 display: grid;
 grid-template-columns:repeat(4, 1fr);
 grid-template-rows:repeat(5, 1fr);
-grid-gap: 1rem;
+/* grid-gap: 0.5 rem; */
 }
 .button{
     height:10vh;
@@ -54,6 +57,7 @@ grid-gap: 1rem;
     align-items: center;
     cursor: pointer;
     transition:filter .3s;
+    margin-top: 0.3rem; 
 }
 
 .button:active,
@@ -68,9 +72,28 @@ background: #a5a5a5;
     background:#f1a33c ;
 }
 .button.number-0{
-    width: 12.5rem;
+    width: 10rem; 
+    grid-column: 1/span 2; 
     border-radius:55px ;
     justify-content: flex-start;
-    padding-left: 2rem;
-    grid-column: 1/span 2; 
+    padding-left: 1rem;
 }
+
+@media only screen and (min-width: 1600px) {
+    
+    .button.number-0{
+        width: 13rem; 
+        grid-column: 1/span 2; 
+        border-radius:55px ;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+}
+
+/* @media only screen and (max-width: 300px) {
+    .calculator{
+        width: 75vw;
+        /* height: 90vh; */
+        block-size: 100px;
+    }
+} */
